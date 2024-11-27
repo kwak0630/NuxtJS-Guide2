@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+[class^="btn-"] {
+	position: relative;
+}
+
+.btn-type{
+	min-width: 100px;
+	height: 50px;
+	padding: 0 15px;
+	background-color: $CBrand;
+	border-radius: 6px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+
+.btn-top{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	box-shadow: 2px 3px 9px rgba($color: #000000, $alpha: 0.3);
+	.ico-arrow{
+		@include abs(c);
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+}
+
+.btn-back{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	box-shadow: 2px 3px 9px rgba($color: #000000, $alpha: 0.3);
+	.ico-arrow{
+		@include abs(c);
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+}
